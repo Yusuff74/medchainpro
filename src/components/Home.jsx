@@ -1,7 +1,8 @@
 import React from "react";
 import Footer from "./Footer";
+import { Link } from "react-router-dom";
 
-const HomeNews = () => {
+const Home = () => {
   const headerStyle = {
     fontSize: "2rem",
     fontWeight: "bold",
@@ -25,9 +26,9 @@ const HomeNews = () => {
   const smallText = { color: "#484848", fontSize: "0.9rem" };
 
   return (
-    <div>
-      <div className="flex flex-row" style={{ width: "100%" }}>
-        <div className="pt-20 pl-4 w-1/2">
+    <div className="container">
+      <div className="row" style={{ width: "100%", marginTop: "4rem" }}>
+        <div className="col-12 col-lg-6  pt-20">
           <h1 style={headerStyle}>Welcome To</h1>
           <p
             style={{
@@ -82,8 +83,7 @@ const HomeNews = () => {
             <p className="ml-4">ISO 9001-2015 certified</p>
           </div>
         </div>
-
-        <div className="hidden md:flex">
+        <div className="d-none d-lg-block col-6">
           <img src="https://res.cloudinary.com/bizstak/image/upload/v1684239587/banner_uhxkbs.png" />
         </div>
       </div>
@@ -145,11 +145,11 @@ const HomeNews = () => {
           </h1>
         </div>
         <div className="row mt-5">
-          <div className="col-6 mt-7">
+          <div className="d-none d-lg-block col-6 mt-7">
             <img src="https://www.drugstoc.com/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fbizstak%2Fimage%2Fupload%2Fv1684242950%2FImage-1_ceo26i.png&w=1600&q=75" />
           </div>
-          <div className="col-6">
-            <ul style={{ listStyleImage: "url()" }}>
+          <div className="col-12 col-lg-6">
+            <ul style={{ listStyle: "square" }}>
               <li> Extensive Network Of Pharmaceutical Companies</li>
               <li>
                 Comprehensive Product Catalog With Detailed Descriptions And
@@ -172,4 +172,4 @@ const HomeNews = () => {
   );
 };
 
-export default HomeNews;
+export default Home;

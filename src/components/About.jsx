@@ -9,7 +9,7 @@ const About = () => {
     width: "100%",
   };
   return (
-    <div>
+    <div className="mt-6">
       <div
         className="container-fluid w-100"
         style={{
