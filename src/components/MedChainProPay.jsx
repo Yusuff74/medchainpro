@@ -115,7 +115,10 @@ const MedChainProPay = () => {
               </ul>
             </div>
             <div className="col-lg-4">
-              <img src="https://res.cloudinary.com/bizstak/image/upload/v1684432164/credit_ajbcq2.png" />
+              <img
+                src="https://res.cloudinary.com/bizstak/image/upload/v1684432164/credit_ajbcq2.png"
+                style={{ width: "100%" }}
+              />
             </div>
             <div className="flex justify-center mt-5">
               <Link className="btn btn-primary py-3 px-4">DOWNLOAD MOBILE</Link>
