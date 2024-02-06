@@ -1,5 +1,5 @@
 import React from "react";
-import Footer from "./Footer";
+import Footer from "../utilities/Footer";
 
 const About = () => {
   const medStyle = {
@@ -9,7 +9,7 @@ const About = () => {
     width: "100%",
   };
   return (
-    <div className="mt-6">
+    <div>
       <div
         className="container-fluid w-100"
         style={{
@@ -94,13 +94,18 @@ const About = () => {
             className="col-lg-6 d-lg-block d-none"
             style={{ padding: "0", objectFit: "cover" }}
           >
-            <img src="https://res.cloudinary.com/bizstak/image/upload/v1684235697/banner_i6jd4m.png" />
+            <img
+              src="https://res.cloudinary.com/bizstak/image/upload/v1684235697/banner_i6jd4m.png"
+              style={{ width: "100%", marginTop: "2rem" }}
+            />
           </div>
         </div>
       </div>
+
       <section style={{ padding: "4rem 0" }}>
         <div className="container">
           <div className="row">
+            <div className="col-lg-1"></div>
             <div className="col-lg-5">
               <div className="card mb-5 mb-lg-0" style={{ height: "15rem" }}>
                 <div className="card-body">
